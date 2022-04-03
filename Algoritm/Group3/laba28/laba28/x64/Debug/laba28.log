@@ -1,0 +1,9 @@
+﻿  MyForm.cpp
+C:\github\College_labs\Algorithm\Group3\laba28\laba28\MyForm.h(234,13): warning C4244: инициализация: преобразование "double" в "int", возможна потеря данных
+C:\github\College_labs\Algorithm\Group3\laba28\laba28\MyForm.h(235,13): warning C4244: инициализация: преобразование "double" в "int", возможна потеря данных
+C:\github\College_labs\Algorithm\Group3\laba28\laba28\MyForm.h(236,10): warning C4101: time3: неиспользованная локальная переменная
+C:\github\College_labs\Algorithm\Group3\laba28\laba28\MyForm.h(236,17): warning C4101: time4: неиспользованная локальная переменная
+  .NETFramework,Version=v4.7.2.AssemblyAttributes.cpp
+  Создание кода...
+  MyForm.obj : обнаружен модуль MSIL; для MSIL последовательная компоновка отключена; выполняется полная компоновка
+  laba28.vcxproj -> C:\github\College_labs\Algorithm\Group3\laba28\x64\Debug\laba28.exe

@@ -1,0 +1,8 @@
+C:\MyFile\Algorithm\Group3\laba28\laba28\x64\Debug\laba28.vcxproj.AssemblyReference.cache
+C:\MyFile\Algorithm\Group3\laba28\laba28\x64\Debug\laba28.vcxproj.SuggestedBindingRedirects.cache
+C:\MyFile\Algorithm\Group3\laba28\laba28\x64\Debug\laba28.MyForm.resources
+C:\MyFile\Algorithm\Group3\laba28\laba28\x64\Debug\laba28.vcxproj.GenerateResource.cache
+C:\github\College_labs\Algorithm\Group3\laba28\laba28\x64\Debug\laba28.vcxproj.AssemblyReference.cache
+C:\github\College_labs\Algorithm\Group3\laba28\laba28\x64\Debug\laba28.vcxproj.SuggestedBindingRedirects.cache
+C:\github\College_labs\Algorithm\Group3\laba28\laba28\x64\Debug\laba28.MyForm.resources
+C:\github\College_labs\Algorithm\Group3\laba28\laba28\x64\Debug\laba28.vcxproj.GenerateResource.cache

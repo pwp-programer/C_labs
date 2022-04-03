@@ -1,0 +1,4 @@
+C:\MyFile\Algorithm\Group3\laba30\laba30\laba30\x64\Debug\laba30.vcxproj.AssemblyReference.cache
+C:\MyFile\Algorithm\Group3\laba30\laba30\laba30\x64\Debug\laba30.vcxproj.SuggestedBindingRedirects.cache
+C:\MyFile\Algorithm\Group3\laba30\laba30\laba30\x64\Debug\laba30.MyForm.resources
+C:\MyFile\Algorithm\Group3\laba30\laba30\laba30\x64\Debug\laba30.vcxproj.GenerateResource.cache

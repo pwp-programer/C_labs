@@ -1,0 +1,5 @@
+﻿  laba18-2.cpp
+C:\Users\pwp\Desktop\С++ labs\Group2\laba18\laba18-2\laba18-2\laba18-2.cpp(13,20): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\pwp\Desktop\С++ labs\Group2\laba18\laba18-2\laba18-2\laba18-2.cpp(20,20): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\pwp\Desktop\С++ labs\Group2\laba18\laba18-2\laba18-2\laba18-2.cpp(29,12): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+  laba18-2.vcxproj -> C:\Users\pwp\Desktop\С++ labs\Group2\laba18\laba18-2\x64\Debug\laba18-2.exe

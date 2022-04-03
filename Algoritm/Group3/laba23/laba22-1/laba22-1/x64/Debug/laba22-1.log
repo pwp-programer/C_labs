@@ -1,0 +1,4 @@
+﻿  laba22-1.cpp
+C:\Users\pwp\Desktop\С++ labs\Group3\laba23\laba22-1\laba22-1\laba22-1.cpp(36,54): error C2661: Developer::Developer: нет перегруженной функции, принимающей 3 аргументов
+C:\Users\pwp\Desktop\С++ labs\Group3\laba23\laba22-1\laba22-1\laba22-1.cpp(52,73): error C2661: Developer::Developer: нет перегруженной функции, принимающей 3 аргументов
+C:\Users\pwp\Desktop\С++ labs\Group3\laba23\laba22-1\laba22-1\laba22-1.cpp(68,70): error C2661: Developer::Developer: нет перегруженной функции, принимающей 3 аргументов

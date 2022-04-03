@@ -1,0 +1,7 @@
+﻿  MyForm.cpp
+C:\MyFile\Algorithm\Group3\laba29\laba29\MyForm.h(448,1): warning C4102: OpenFile: неиспользованная метка
+C:\MyFile\Algorithm\Group3\laba29\laba29\MyForm.h(453,1): warning C4102: Application: неиспользованная метка
+C:\MyFile\Algorithm\Group3\laba29\laba29\MyForm.h(458,1): warning C4102: Application: неиспользованная метка
+C:\MyFile\Algorithm\Group3\laba29\laba29\MyForm.h(463,1): warning C4102: Application: неиспользованная метка
+  MyForm.obj : обнаружен модуль MSIL; для MSIL последовательная компоновка отключена; выполняется полная компоновка
+  laba29.vcxproj -> C:\MyFile\Algorithm\Group3\laba29\x64\Debug\laba29.exe

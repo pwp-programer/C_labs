@@ -1,0 +1,4 @@
+C:\MyFile\Algorithm\Group3\laba27\laba27\x64\Debug\laba27.vcxproj.AssemblyReference.cache
+C:\MyFile\Algorithm\Group3\laba27\laba27\x64\Debug\laba27.vcxproj.SuggestedBindingRedirects.cache
+C:\MyFile\Algorithm\Group3\laba27\laba27\x64\Debug\laba27.MyForm.resources
+C:\MyFile\Algorithm\Group3\laba27\laba27\x64\Debug\laba27.vcxproj.GenerateResource.cache

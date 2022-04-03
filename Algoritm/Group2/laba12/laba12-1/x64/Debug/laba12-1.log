@@ -1,0 +1,4 @@
+﻿  laba12-1.cpp
+C:\Users\pwp\Desktop\С++ labs\Group2\laba12\laba12-1\laba12-1\laba12-1.cpp(47,31): warning C4244: +=: преобразование "double" в "int", возможна потеря данных
+C:\Users\pwp\Desktop\С++ labs\Group2\laba12\laba12-1\laba12-1\laba12-1.cpp(58,31): warning C4244: +=: преобразование "double" в "int", возможна потеря данных
+  laba12-1.vcxproj -> C:\Users\pwp\Desktop\С++ labs\Group2\laba12\laba12-1\x64\Debug\laba12-1.exe

@@ -1,0 +1,8 @@
+C:\MyFile\Algorithm\Group3\laba26 ex1\laba26 ex1\x64\Debug\laba26 ex1.vcxproj.AssemblyReference.cache
+C:\MyFile\Algorithm\Group3\laba26 ex1\laba26 ex1\x64\Debug\laba26 ex1.vcxproj.SuggestedBindingRedirects.cache
+C:\MyFile\Algorithm\Group3\laba26 ex1\laba26 ex1\x64\Debug\laba26ex1.MyForm.resources
+C:\MyFile\Algorithm\Group3\laba26 ex1\laba26 ex1\x64\Debug\laba26 ex1.vcxproj.GenerateResource.cache
+C:\MyFile\Algorithm\Group3\laba26\laba26 ex1\laba26 ex1\x64\Debug\laba26 ex1.vcxproj.AssemblyReference.cache
+C:\MyFile\Algorithm\Group3\laba26\laba26 ex1\laba26 ex1\x64\Debug\laba26 ex1.vcxproj.SuggestedBindingRedirects.cache
+C:\MyFile\Algorithm\Group3\laba26\laba26 ex1\laba26 ex1\x64\Debug\laba26ex1.MyForm.resources
+C:\MyFile\Algorithm\Group3\laba26\laba26 ex1\laba26 ex1\x64\Debug\laba26 ex1.vcxproj.GenerateResource.cache
