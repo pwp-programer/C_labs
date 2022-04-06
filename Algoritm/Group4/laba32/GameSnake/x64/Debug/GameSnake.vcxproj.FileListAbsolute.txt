@@ -1,0 +1,12 @@
+C:\Users\pwp\Desktop\GameSnake\GameSnake\x64\Debug\GameSnake.vcxproj.AssemblyReference.cache
+C:\Users\pwp\Desktop\GameSnake\GameSnake\x64\Debug\GameSnake.vcxproj.SuggestedBindingRedirects.cache
+C:\Users\pwp\Desktop\GameSnake\GameSnake\x64\Debug\GameSnake.GameForm.resources
+C:\Users\pwp\Desktop\GameSnake\GameSnake\x64\Debug\GameSnake.vcxproj.GenerateResource.cache
+C:\Users\avsyu\Desktop\GameSnake\GameSnake\x64\Debug\GameSnake.vcxproj.AssemblyReference.cache
+C:\Users\avsyu\Desktop\GameSnake\GameSnake\x64\Debug\GameSnake.vcxproj.SuggestedBindingRedirects.cache
+C:\Users\avsyu\Desktop\GameSnake\GameSnake\x64\Debug\GameSnake.GameForm.resources
+C:\Users\avsyu\Desktop\GameSnake\GameSnake\x64\Debug\GameSnake.vcxproj.GenerateResource.cache
+C:\Users\pwp\Desktop\d\GameSnake\GameSnake\x64\Debug\GameSnake.vcxproj.AssemblyReference.cache
+C:\Users\pwp\Desktop\d\GameSnake\GameSnake\x64\Debug\GameSnake.vcxproj.SuggestedBindingRedirects.cache
+C:\Users\pwp\Desktop\d\GameSnake\GameSnake\x64\Debug\GameSnake.GameForm.resources
+C:\Users\pwp\Desktop\d\GameSnake\GameSnake\x64\Debug\GameSnake.vcxproj.GenerateResource.cache

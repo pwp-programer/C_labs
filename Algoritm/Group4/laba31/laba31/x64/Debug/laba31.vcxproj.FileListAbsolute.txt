@@ -2,3 +2,7 @@ C:\github\College_labs\Algorithm\Group4\laba31\laba31\x64\Debug\laba31.vcxproj.A
 C:\github\College_labs\Algorithm\Group4\laba31\laba31\x64\Debug\laba31.vcxproj.SuggestedBindingRedirects.cache
 C:\github\College_labs\Algorithm\Group4\laba31\laba31\x64\Debug\laba31.MyForm.resources
 C:\github\College_labs\Algorithm\Group4\laba31\laba31\x64\Debug\laba31.vcxproj.GenerateResource.cache
+C:\github\C_labs\Algoritm\Group4\laba31\laba31\x64\Debug\laba31.vcxproj.AssemblyReference.cache
+C:\github\C_labs\Algoritm\Group4\laba31\laba31\x64\Debug\laba31.vcxproj.SuggestedBindingRedirects.cache
+C:\github\C_labs\Algoritm\Group4\laba31\laba31\x64\Debug\laba31.MyForm.resources
+C:\github\C_labs\Algoritm\Group4\laba31\laba31\x64\Debug\laba31.vcxproj.GenerateResource.cache
