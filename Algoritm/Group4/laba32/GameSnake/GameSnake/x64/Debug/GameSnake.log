@@ -1,4 +1,0 @@
-﻿  GameForm.cpp
-C:\github\C_labs\Algoritm\Group4\laba32\GameSnake\GameSnake\GameForm.cpp(7,33): warning C4829: Возможно, неправильные параметры функции main. Рекомендуемый вариант - "int main(Platform::Array<Platform::String^>^ argv)"
-  GameForm.obj : обнаружен модуль MSIL; для MSIL последовательная компоновка отключена; выполняется полная компоновка
-  GameSnake.vcxproj -> C:\github\C_labs\Algoritm\Group4\laba32\GameSnake\x64\Debug\GameSnake.exe
