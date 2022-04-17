@@ -1,8 +1,0 @@
-﻿  GameForm.cpp
-C:\Users\pwp\Desktop\d\GameSnake\GameSnake\GameForm.cpp(7,33): warning C4829: Возможно, неправильные параметры функции main. Рекомендуемый вариант - "int main(Platform::Array<Platform::String^>^ argv)"
-C:\Users\pwp\Desktop\d\GameSnake\GameSnake\GameForm.cpp(130,20): warning C4244: аргумент: преобразование "float" в "int", возможна потеря данных
-C:\Users\pwp\Desktop\d\GameSnake\GameSnake\GameForm.cpp(214,20): warning C4244: аргумент: преобразование "float" в "int", возможна потеря данных
-  .NETFramework,Version=v4.7.2.AssemblyAttributes.cpp
-  Создание кода...
-  GameForm.obj : обнаружен модуль MSIL; для MSIL последовательная компоновка отключена; выполняется полная компоновка
-  GameSnake.vcxproj -> C:\Users\pwp\Desktop\d\GameSnake\x64\Debug\GameSnake.exe

@@ -1,5 +1,9 @@
 #pragma once
 #include <string>
+#include <ctype.h>
+#include <windows.h> // for EXCEPTION_ACCESS_VIOLATION
+#include <excpt.h>
+#include <stdio.h>
 
 namespace laba31 {
 
@@ -58,7 +62,7 @@ namespace laba31 {
 		/// <summary>
 		/// Обязательная переменная конструктора.
 		/// </summary>
-		System::ComponentModel::Container ^components;
+		System::ComponentModel::Container^ components;
 
 #pragma region Windows Form Designer generated code
 		/// <summary>
@@ -279,8 +283,23 @@ namespace laba31 {
 
 		}
 #pragma endregion
+		int filter(unsigned int code, struct _EXCEPTION_POINTERS* ep)
+		{
+			puts("in filter.");
+			if (code == EXCEPTION_ACCESS_VIOLATION)
+			{
+				puts("caught AV as expected.");
+				return EXCEPTION_EXECUTE_HANDLER;
+			}
+			else
+			{
+				puts("didn't catch AV, unexpected.");
+				return EXCEPTION_CONTINUE_SEARCH;
+			};
+		}
 
-	private: System::Void button1_Click(System::Object^ sender, System::EventArgs^ e) 
+
+	private: System::Void button1_Click(System::Object^ sender, System::EventArgs^ e)
 	{
 		if (inp->Text == "")
 		{
@@ -288,49 +307,58 @@ namespace laba31 {
 		}
 		else
 		{
-			double cost = 0; // цена
-			int n; // количество фотографий
-			double sum; // сумма
-			String^ format; // формат
-			String^ paper = "обычная"; // бумага
-			// формат
-			if (radioButton1->Checked) {
-				format = "9x12";
-				cost = 3.50;
+
+			try
+			{
+				double cost = 0; // цена
+				int n; // количество фотографий
+				double sum; // сумма
+				String^ format; // формат
+				String^ paper = "обычная"; // бумага
+				// формат
+				if (radioButton1->Checked) {
+					format = "9x12";
+					cost = 3.50;
+				}
+				if (radioButton2->Checked) {
+					format = "10x15";
+					cost = 4.50;
+				}
+				if (radioButton3->Checked) {
+					format = "18x24";
+					cost = 5.50;
+				}
+				// бумага
+				if (radioButton4->Checked) {
+					paper = "глянцевая";
+					cost = cost + 0.1;
+				}
+				n = Convert::ToInt32(inp->Text);
+				sum = n * cost;
+				message->Text = "Формат: " + format +
+					"\nБумага: " + paper +
+					"\nЦена: " + cost.ToString("c") +
+					"\nКоличество: " + n.ToString() + "шт.\n" +
+					"Сумма заказа: " + sum.ToString("C");
 			}
-			if (radioButton2->Checked) {
-				format = "10x15";
-				cost = 4.50;
+			catch (...)
+			{
+				message->Text = "Введите число";
 			}
-			if (radioButton3->Checked) {
-				format = "18x24";
-				cost = 5.50;
-			}
-			// бумага
-			if (radioButton4->Checked) {
-				paper = "глянцевая";
-				cost = cost + 0.1;
-			}
-			n = Convert::ToInt32(inp->Text);
-			sum = n * cost;
-			message->Text = "Формат: " + format +
-				"\nБумага: " + paper +
-				"\nЦена: " + cost.ToString("c") +
-				"\nКоличество: " + n.ToString() + "шт.\n" +
-				"Сумма заказа: " + sum.ToString("C");
+
 		}
 	}
 
-		
-	private: System::Void toolStripButton1_Click(System::Object^ sender, System::EventArgs^ e) 
+
+	private: System::Void toolStripButton1_Click(System::Object^ sender, System::EventArgs^ e)
 	{
 		groupBoxALpha->Visible = false;
 	}
 
 
-	private: System::Void toolStripButton2_Click(System::Object^ sender, System::EventArgs^ e) 
+	private: System::Void toolStripButton2_Click(System::Object^ sender, System::EventArgs^ e)
 	{
 		groupBoxALpha->Visible = true;
 	}
-};
+	};
 }
