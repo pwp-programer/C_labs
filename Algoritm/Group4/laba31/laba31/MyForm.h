@@ -150,7 +150,7 @@ namespace laba31 {
 			// 
 			// groupBox1
 			// 
-			this->groupBox1->BackColor = System::Drawing::Color::Black;
+			this->groupBox1->BackColor = System::Drawing::Color::OliveDrab;
 			this->groupBox1->Controls->Add(this->radioButton1);
 			this->groupBox1->Controls->Add(this->radioButton2);
 			this->groupBox1->Controls->Add(this->radioButton3);
@@ -193,7 +193,7 @@ namespace laba31 {
 			// 
 			// button1
 			// 
-			this->button1->BackColor = System::Drawing::Color::Black;
+			this->button1->BackColor = System::Drawing::Color::OliveDrab;
 			this->button1->Location = System::Drawing::Point(162, 285);
 			this->button1->Name = L"button1";
 			this->button1->Size = System::Drawing::Size(100, 21);
@@ -212,7 +212,7 @@ namespace laba31 {
 			// 
 			// toolStrip1
 			// 
-			this->toolStrip1->BackColor = System::Drawing::Color::Black;
+			this->toolStrip1->BackColor = System::Drawing::Color::OliveDrab;
 			this->toolStrip1->Items->AddRange(gcnew cli::array< System::Windows::Forms::ToolStripItem^  >(2) {
 				this->toolStripButton1,
 					this->toolStripButton2
@@ -246,6 +246,7 @@ namespace laba31 {
 			// 
 			// groupBoxALpha
 			// 
+			this->groupBoxALpha->BackColor = System::Drawing::Color::OliveDrab;
 			this->groupBoxALpha->Controls->Add(this->label1);
 			this->groupBoxALpha->Controls->Add(this->inp);
 			this->groupBoxALpha->Controls->Add(this->groupBox2);
@@ -257,19 +258,20 @@ namespace laba31 {
 			this->groupBoxALpha->Size = System::Drawing::Size(574, 410);
 			this->groupBoxALpha->TabIndex = 12;
 			this->groupBoxALpha->TabStop = false;
-			this->groupBoxALpha->Text = L"groupBox3";
+			this->groupBoxALpha->Enter += gcnew System::EventHandler(this, &MyForm::groupBoxALpha_Enter);
 			// 
 			// MyForm
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
-			this->BackColor = System::Drawing::SystemColors::ActiveCaptionText;
+			this->BackColor = System::Drawing::Color::OliveDrab;
 			this->ClientSize = System::Drawing::Size(598, 468);
 			this->Controls->Add(this->groupBoxALpha);
 			this->Controls->Add(this->toolStrip1);
 			this->ForeColor = System::Drawing::SystemColors::ButtonFace;
 			this->Name = L"MyForm";
 			this->Text = L"MyForm";
+			this->Load += gcnew System::EventHandler(this, &MyForm::MyForm_Load);
 			this->groupBox1->ResumeLayout(false);
 			this->groupBox1->PerformLayout();
 			this->groupBox2->ResumeLayout(false);
@@ -333,6 +335,11 @@ namespace laba31 {
 					paper = "глянцевая";
 					cost = cost + 0.1;
 				}
+				if (radioButton5->Checked)
+				{
+					paper = "матовая";
+					cost = cost + 0.1;
+				}
 				n = Convert::ToInt32(inp->Text);
 				sum = n * cost;
 				message->Text = "Формат: " + format +
@@ -359,6 +366,10 @@ namespace laba31 {
 	private: System::Void toolStripButton2_Click(System::Object^ sender, System::EventArgs^ e)
 	{
 		groupBoxALpha->Visible = true;
+	}
+	private: System::Void MyForm_Load(System::Object^ sender, System::EventArgs^ e) {
+	}
+	private: System::Void groupBoxALpha_Enter(System::Object^ sender, System::EventArgs^ e) {
 	}
 	};
 }

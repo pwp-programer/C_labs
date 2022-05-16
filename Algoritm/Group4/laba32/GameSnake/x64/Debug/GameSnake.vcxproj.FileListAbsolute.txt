@@ -10,3 +10,7 @@ C:\github\C_labs\Algoritm\Group4\laba32\GameSnake\GameSnake\x64\Debug\GameSnake.
 C:\github\C_labs\Algoritm\Group4\laba32\GameSnake\GameSnake\x64\Debug\GameSnake.vcxproj.SuggestedBindingRedirects.cache
 C:\github\C_labs\Algoritm\Group4\laba32\GameSnake\GameSnake\x64\Debug\GameSnake.GameForm.resources
 C:\github\C_labs\Algoritm\Group4\laba32\GameSnake\GameSnake\x64\Debug\GameSnake.vcxproj.GenerateResource.cache
+C:\github\C_labs\Algoritm\Group4\laba32\GameSnake\x64\Debug\GameSnake.vcxproj.AssemblyReference.cache
+C:\github\C_labs\Algoritm\Group4\laba32\GameSnake\x64\Debug\GameSnake.vcxproj.SuggestedBindingRedirects.cache
+C:\github\C_labs\Algoritm\Group4\laba32\GameSnake\x64\Debug\GameSnake.GameForm.resources
+C:\github\C_labs\Algoritm\Group4\laba32\GameSnake\x64\Debug\GameSnake.vcxproj.GenerateResource.cache

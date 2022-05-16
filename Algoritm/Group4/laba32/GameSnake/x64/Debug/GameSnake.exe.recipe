@@ -2,7 +2,7 @@
 <Project>
   <ProjectOutputs>
     <ProjectOutput>
-      <FullPath>C:\github\C_labs\Algoritm\Group4\laba32\GameSnake\x64\Debug\GameSnake.exe</FullPath>
+      <FullPath>C:\github\C_labs\Algoritm\Group4\laba32\x64\Debug\GameSnake.exe</FullPath>
     </ProjectOutput>
   </ProjectOutputs>
   <ContentFiles />
