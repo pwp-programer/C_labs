@@ -25,7 +25,7 @@ public:
 
 			std::string line;
 
-			std::ifstream in("C:\\Users\\pwp\\Desktop\\Курсовая\\data.txt"); // окрываем файл для чтения
+			std::ifstream in("C:\\github\\C_labs\\Algoritm\\Курсовая\\data.txt"); // окрываем файл для чтения
 			if (in.is_open())
 			{
 				while (getline(in, line))
