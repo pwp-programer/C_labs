@@ -1,0 +1,4 @@
+﻿  test.cpp
+C:\github\C_labs\Algoritm\Курсовая\test\test\test.cpp(50): warning C4715: MyClass::size_func: значение возвращается не при всех путях выполнения
+C:\github\C_labs\Algoritm\Курсовая\test\test\test.cpp(120): warning C4715: MyClass::returner_arrays: значение возвращается не при всех путях выполнения
+  test.vcxproj -> C:\github\C_labs\Algoritm\Курсовая\test\x64\Debug\test.exe

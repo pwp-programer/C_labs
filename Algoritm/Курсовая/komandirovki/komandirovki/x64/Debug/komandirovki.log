@@ -1,4 +1,5 @@
 ﻿  komandirovki.cpp
-C:\github\C_labs\Algoritm\Курсовая\komandirovki\komandirovki\komandirovki.cpp(455): warning C4715: MyClass::first_admin_menu_func: значение возвращается не при всех путях выполнения
-C:\github\C_labs\Algoritm\Курсовая\komandirovki\komandirovki\komandirovki.cpp(113): warning C4715: MyClass::first_user_menu_func: значение возвращается не при всех путях выполнения
+C:\github\C_labs\Algoritm\Курсовая\komandirovki\komandirovki\komandirovki.cpp(50): warning C4715: MyClass::size_func: значение возвращается не при всех путях выполнения
+C:\github\C_labs\Algoritm\Курсовая\komandirovki\komandirovki\komandirovki.cpp(120): warning C4715: MyClass::returner_arrays: значение возвращается не при всех путях выполнения
+C:\github\C_labs\Algoritm\Курсовая\komandirovki\komandirovki\komandirovki.cpp(330): warning C4715: MyClass::usr_menu: значение возвращается не при всех путях выполнения
   komandirovki.vcxproj -> C:\github\C_labs\Algoritm\Курсовая\komandirovki\x64\Debug\komandirovki.exe
