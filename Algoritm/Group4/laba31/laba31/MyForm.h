@@ -333,7 +333,7 @@ namespace laba31 {
 				// бумага
 				if (radioButton4->Checked) {
 					paper = "глянцевая";
-					cost = cost + 0.1;
+					cost = cost + 0.3;
 				}
 				if (radioButton5->Checked)
 				{
