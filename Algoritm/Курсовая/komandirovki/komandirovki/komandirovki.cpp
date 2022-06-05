@@ -5,6 +5,10 @@
 #include <stdlib.h>
 #include <cstdlib>
 #include <Windows.h>  // Для жёсткой локализации в cmd и текстовом файле.
+#include <map>
+#include <vector>
+#include <algorithm>
+#include <iterator>
 
 
 using namespace std;
@@ -79,7 +83,7 @@ public:
 				if (counter_6 <= 6)
 				{
 					data_array[prnt_counter] = data_array[prnt_counter] + line + " ";
-					if (counter_6 == 5)
+					if (counter_6 == 4)
 					{
 						city_array[city_counter] = line;
 						city_counter++;
@@ -243,14 +247,34 @@ public:
 		{
 			while (true)
 			{
-				system("cls");
-				cout << "Список городов: ";
-				string* city_array = returner_arrays("C:\\github\\C_labs\\Algoritm\\Курсовая\\data.txt", "city");
+				string* array = returner_arrays("C:\\github\\C_labs\\Algoritm\\Курсовая\\data.txt", "city");
+				string* month_array = returner_arrays("C:\\github\\C_labs\\Algoritm\\Курсовая\\data.txt", "month");
+				int size_m = size_func("C:\\github\\C_labs\\Algoritm\\Курсовая\\data.txt", "month");
 				int size = size_func("C:\\github\\C_labs\\Algoritm\\Курсовая\\data.txt", "city");
 
-				for (int i = 0; i < size - 1; i++)
+				vector<string> v = sort_array(array, size);
+
+				system("cls");
+				cout << "Введите месяц: \n";
+				string month;
+				getline(cin, month);
+
+				system("cls");
+				cout << "Список городов: " << endl;
+
+				bool s = false;
+				for (int i = 0; i < v.size() + s; i++)
 				{
-					cout << "Город номер " << i + 1 << ": " << city_array[i] << endl;
+					if ("0" + month == month_array[i] || month == month_array[i])
+					{
+						cout << v[i] << endl;
+						s = true;
+					}
+				}
+				if (s == false)
+				{
+					system("cls");
+					cout << "Записи отсутсвуют" << endl;
 				}
 
 				cout << "\n\nВыберите действие:\n0-Вернутся назад" << endl;
@@ -273,21 +297,21 @@ public:
 				int size = size_func("C:\\github\\C_labs\\Algoritm\\Курсовая\\data.txt", "money");
 				int size_m = size_func("C:\\github\\C_labs\\Algoritm\\Курсовая\\data.txt", "month");
 				system("cls");
-
-				cout << "Введите номер месяца: ";
-				string month_choice;
-				getline(cin, month_choice);
+				cout << "Введите месяц: \n"; string month; getline(cin, month);
 
 				system("cls");
 				cout << "Общее кол-во командировочных выплат: \n\n" << endl;
 
 				bool month_value = false;
 				int counter = 0;
-				for (int i = 0; i < size_m; i++)
+
+
+				for (int i = 0; i < size; i++)
 				{
-					if (month_array[i] == month_choice)
+					string zero_month = "0" + month;
+					if (zero_month == month_array[i] || month == month_array[i])
 					{
-						cout << "Выплата номер " << counter + 1 << ": " << "за месяц " << month_choice << ": " << money_array[i] << endl;
+						cout << "Выплата номер " << counter + 1 << " за месяц: " << money_array[i] << endl;
 						month_value = true;
 						counter++;
 					}
@@ -322,12 +346,53 @@ public:
 			return true;
 		}
 
-
-		/*
-		stop_while_in_user_func_value = true;
-		break;
-		*/
 	}
+
+
+	vector<string> sort_array(string* array, int size)
+	{
+		int n = size; vector <string> vec;
+
+		system("cls");
+		string a;
+		for (int i = 0; i < n; i++)
+		{
+			vec.push_back(array[i]);
+		}
+
+		std::map<std::string, size_t> counter;
+		for (const auto& item : vec)
+		{
+			counter[item]++;
+		}
+
+		std::vector<std::pair<size_t, std::string>> sorting;
+		for (auto it = counter.begin(); it != counter.end(); it++)
+		{
+			sorting.push_back({ it->second,it->first });
+		}
+
+		std::sort(sorting.rbegin(), sorting.rend(), [](const auto& l, const auto& r)
+			{
+				return l.first < r.first;
+			});
+
+		std::vector<std::string> vec_result;
+		vec_result.reserve(vec.size());
+		for (const auto& item : sorting)
+		{
+			vec_result.insert(vec_result.end(), item.first, item.second);
+		}
+
+		vector <string> last;
+		for (int i = 0; i < vec_result.size(); i++)
+		{
+			if (!vec_result[i].empty())
+				last.push_back(vec_result[i]);
+		}
+		return last;
+	}
+
 
 	void user_func()
 	{

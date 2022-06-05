@@ -4,6 +4,16 @@
 #include <Windows.h>
 #include <cstdlib>
 #include <map>
+#include <vector>
+#include <unordered_map>
+#include <iostream>
+#include <algorithm>
+#include <iterator>
+
+// NEEDED
+#include <conio.h>
+#include <stdio.h>
+#include <algorithm>
 
 using namespace std;
 
@@ -63,6 +73,7 @@ public:
 			string* city_array = new string[1000];
 			string* money_array = new string[1000];
 			string* month_array = new string[1000];
+			string* all_array = new string[1000];
 
 			while (getline(fout, line))
 			{
@@ -79,7 +90,7 @@ public:
 				if (counter_6 <= 6)
 				{
 					data_array[prnt_counter] = data_array[prnt_counter] + line + " ";
-					if (counter_6 == 5)
+					if (counter_6 == 4)
 					{
 						city_array[city_counter] = line;
 						city_counter++;
@@ -101,6 +112,7 @@ public:
 					prnt_counter++;
 					counter_6 = 0;
 				}
+				all_array[i] = line;
 				i++;
 			}
 			fout.close();
@@ -116,56 +128,80 @@ public:
 				return money_array;
 			else if (mode == "month")
 				return month_array;
+			else if (mode == "all")
+				return all_array;
 		}
 	}
 
 
-
-	void func()
+	void sort_array(string* array, int size)
 	{
-		string* array = returner_arrays("C:\\github\\C_labs\\Algoritm\\Курсовая\\data.txt", "prnt");
-		int size = size_func("C:\\github\\C_labs\\Algoritm\\Курсовая\\data.txt", "prnt");
+		int n = size; vector <string> vec;
 
-		map <string, int> mp;
+		system("cls");
+		string a;
+		for (int i = 0; i < n; i++)
+		{
+			vec.push_back(array[i]);
+		}
 
-		/* Алгоритм проверки:
-			1. Заполнить mp знаениями из массива для ключей и 1 для самих объектов.
-			2. Цикл в котором мы проверим элемент на вхождение в mp и посчитаем количество вхождений.
-			3. По итогу перезапишем значение объекта для ключа который мы только что проверили.
-			4. Отсортируем по ключам и запишем в новый массив.
-			5. Вернём массив для дальнейшей работы с ним.
+		std::map<std::string, size_t> counter;
+		for (const auto& item : vec)
+		{
+			counter[item]++;
+		}
 
-		Методы:
-			1. swap
-			2. find
-			3. count
-			4. contains
+		std::vector<std::pair<size_t, std::string>> sorting;
+		for (auto it = counter.begin(); it != counter.end(); it++)
+		{
+			sorting.push_back({ it->second,it->first });
+		}
 
-		*/
-		map<int, string> m1;
-		map<int, int>::size_type i;
-		typedef pair<int, int> Int_Pair;
+		std::sort(sorting.rbegin(), sorting.rend(), [](const auto& l, const auto& r)
+			{
+				return l.first < r.first;
+			});
 
-		m1 = { {2, "Витебск"},{2, "Минск"} };
+		std::vector<std::string> vec_result;
+		vec_result.reserve(vec.size());
+		for (const auto& item : sorting)
+		{
+			vec_result.insert(vec_result.end(), item.first, item.second);
+		}
 
-		// Keys must be unique in map, so duplicates are ignored
-		i = m1.count(2);
-		cout << i << endl;
-
-		i = m1.count(1);
-		cout << i << endl;
-
+		for (const auto& item : vec_result)
+		{
+			std::cout << item << "\n";
+		}
 	}
+
 };
+
+
+
+
 
 int main()
 {
-	SetConsoleCP(1251);
-	SetConsoleOutputCP(1251);
+	SetConsoleCP(1251);           // Это база, 
+	SetConsoleOutputCP(1251);	 //  это знать надо 
+
 
 	MyClass use;
-	use.func();
 
+	string* month_array = use.returner_arrays("C:\\github\\C_labs\\Algoritm\\Курсовая\\data.txt", "month");
+	int size = use.size_func("C:\\github\\C_labs\\Algoritm\\Курсовая\\data.txt", "city");
+	system("cls");
+
+	string month;
+	getline(cin, month);
+
+	for (int i = 0; i < size; i++)
+	{
+		string zero_month = "0" + month;
+		if (zero_month == month_array[i] || month == month_array[i])
+			cout << "text" << endl;
+	}
 
 	return 0;
 }
